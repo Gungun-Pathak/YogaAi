@@ -1,24 +1,30 @@
 import { useState } from "react";
+import Carousel from "./components/carousel.component";
 
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
+  let slides = [
+    "https://media.discordapp.net/attachments/1164497786964803585/1198309009216782447/acroyoga-4728715_960_720.png?ex=65be6f3b&is=65abfa3b&hm=6acf1dd6413062d6414ab94cd75a44f74bdd91865a1e41a7753aad087fb7b307&=&format=webp&quality=lossless&width=954&height=537",
+    "https://media.discordapp.net/attachments/1164497786964803585/1198309102116425929/photo-1605910959675-2e28d06cc321.png?ex=65be6f51&is=65abfa51&hm=1a1e150572eaaa080afd322564488ca05b5abb04304827e4275b9d28833bc5c9&=&format=webp&quality=lossless&width=805&height=537",
+    "https://media.discordapp.net/attachments/1164497786964803585/1198310338957946910/acroyoga-4728712_1280.png?ex=65be7078&is=65abfb78&hm=4b36f7eee6a42b274c0a241b68be727a72c7a0b2a94f51df9659cda84f09392f&=&format=webp&quality=lossless&width=954&height=537",
+    "https://media.discordapp.net/attachments/1164497786964803585/1198309422770958396/HDTckS30-Sunset-yoga.png?ex=65be6f9d&is=65abfa9d&hm=28db9c9051be0c10269ceeed4f240fcf22c0edbd09f4025ca9b9009fb230e8d9&=&format=webp&quality=lossless&width=805&height=537",
+  ];
 
   return (
     <>
       {/*navbar*/}
-      <div className=" bg-gradient-to-r from-purple-300 to-red-700">
-        <nav className="bg-black  p-2 flex justify-between items-center font-bold">
+      <div className=" ">
+        <nav className=" p-2 flex justify-between items-center font-bold">
           {/* Left side of the Navbar */}
           <div className="flex space-x-24 text-black">
-            <a href="#" className="text-white  text-xl ml-14 font-bold">
+            <a href="#" className="text-black  text-xl ml-14 font-bold">
               Home
             </a>
-            <a href="#" className="text-white text-xl font-bold">
+            <a href="#" className="text-black text-xl font-bold">
               About
             </a>
-            <a href="#" className="text-white text-xl font-bold ">
+            <a href="#" className="text-black text-xl font-bold ">
               Contact
             </a>
           </div>
@@ -110,9 +116,11 @@ function App() {
           </div>
         </div>
         {/*Track Section*/}
-        <h1 className="text-5xl my-14  font-bold ml-20">
-          Select What You Need !
-        </h1>
+        <div className="w-full h-24 mb-2 mt-4">
+          <h1 className="text-5xl mt-8  font-bold ml-20">
+            Select What You Need !
+          </h1>
+        </div>
         <div className="flex">
           <div className="flex flex-col w-1/3 pr-32 ml-20">
             <button className=" text-white font-bold py-2 px-4 my-2 rounded border-black border-2 text-xl bg-black hover:bg-white hover:text-black active:bg-blue-500 focus:outline-none focus:ring focus:ring-violet-300">
@@ -219,9 +227,13 @@ function App() {
               ></img>
             </div>
           </div>
-          <div> </div>
-          <div className="ml-10 ">
+          <div className="bg-black">
             {" "}
+            <div className="w-[60%] m-auto ">
+              <Carousel slides={slides} />
+            </div>
+          </div>
+          <div className="ml-10 ">
             <div className="container mx-auto mt-8">
               <h1 className="text-4xl font-bold mb-4">Contact Us</h1>
               <p className="text-gray-600 mb-8 text-lg font-bold">
