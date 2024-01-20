@@ -65,7 +65,7 @@ function App() {
         <div className="  h-fit">
           <div className="container mx-auto mt-10 ">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-              <div className="bg-white p-4 shadow-lg rounded-lg h-96 hover:scale-110  hover:bg-black ...">
+              <div className="bg-white p-4 shadow-lg rounded-lg h-96 hover:scale-110 hover:text-white hover:bg-black ...">
                 <img
                   src="https://media.discordapp.net/attachments/1164497786964803585/1197908606239125676/relaxation-4422090_1920.png?ex=65bcfa53&is=65aa8553&hm=33abe29abc48bafb0b3aca81b1cc649568ee6e9468c7dd1e288b212de0109cf5&=&format=webp&quality=lossless&width=832&height=537"
                   alt="Item 1"
@@ -75,7 +75,7 @@ function App() {
                 <p className="text-gray-600"></p>
               </div>
 
-              <div className="bg-white p-4 shadow-lg rounded-lg h-96 hover:scale-110  hover:bg-black ...">
+              <div className="bg-white p-4 shadow-lg rounded-lg h-96 hover:scale-110 hover:text-white hover:bg-black ...">
                 <img
                   src="https://media.discordapp.net/attachments/1164497786964803585/1197908330211975279/152363-yoga-sunset-wallpaper-top-free-yoga-sunset-background.png?ex=65bcfa11&is=65aa8511&hm=630d6390707fbccc4b65e97c82d28bad58eb4c1a00cd0f1f3cc834f88c5f8ec4&=&format=webp&quality=lossless&width=801&height=537"
                   alt="Item 2"
@@ -85,7 +85,7 @@ function App() {
                 <p className="text-gray-600"></p>
               </div>
 
-              <div className="hover:scale-110 bg-white p-4 shadow-lg rounded-lg h-96  hover:bg-black ...">
+              <div className="hover:scale-110 bg-white p-4 shadow-lg rounded-lg h-96 hover:text-white hover:bg-black ...">
                 <img
                   src="https://media.discordapp.net/attachments/1164497786964803585/1197907846755536907/purple-sunset-yoga-reflection-entovegan.png?ex=65bcf99e&is=65aa849e&hm=b16a778a7933dbb9568417895567f9fbaf402bbf241154fe19fed82dbc57a7b9&=&format=webp&quality=lossless&width=805&height=537"
                   alt="Item 3"
@@ -97,7 +97,7 @@ function App() {
                 <p className="text-gray-600"></p>
               </div>
 
-              <div class="bg-white p-4 hover:scale-110  shadow-lg rounded-lg h-96 hover:bg-black ...">
+              <div class="bg-white p-4 hover:scale-110  shadow-lg rounded-lg h-96 hover:text-white hover:bg-black ...">
                 <img
                   src="https://media.discordapp.net/attachments/1164497786964803585/1197908062674100244/sunset-yoga.png?ex=65bcf9d2&is=65aa84d2&hm=702478d3b6f445fb7d10844097d973de021ddc9b263d4e0e35ceb695f310f560&=&format=webp&quality=lossless&width=807&height=537"
                   alt="Item 4"
@@ -110,32 +110,41 @@ function App() {
           </div>
         </div>
         {/*Track Section*/}
-        <div className=" justify-items-end">
-          <h1 className="text-5xl my-14  font-bold ml-96">
-            Select What You Need !
-          </h1>
+        <h1 className="text-5xl my-14  font-bold ml-20">
+          Select What You Need !
+        </h1>
+        <div className="flex">
+          <div className="flex flex-col w-1/3 pr-32 ml-20">
+            <button className=" text-white font-bold py-2 px-4 my-2 rounded border-black border-2 text-xl bg-black hover:bg-white hover:text-black active:bg-blue-500 focus:outline-none focus:ring focus:ring-violet-300">
+              Beginners Track
+            </button>
+            <button className=" text-white font-bold py-2 px-4 my-2 rounded border-black border-2  text-xl bg-black hover:bg-white hover:text-black active:bg-blue-500 focus:outline-none focus:ring focus:ring-violet-300">
+              Power Yoga Track
+            </button>
+            <button className=" text-white font-bold py-2 px-4 my-2 rounded border-black border-2 text-xl bg-black hover:bg-white hover:text-black active:bg-blue-500 focus:outline-none focus:ring focus:ring-violet-300">
+              Immunity Booster Track
+            </button>
+            <button className=" text-white font-bold py-2 px-4 my-2 rounded border-black border-2 text-xl bg-black hover:bg-white hover:text-black active:bg-blue-500 focus:outline-none focus:ring focus:ring-violet-300">
+              Yoga in Pregnancy Track
+            </button>
+            <button className=" text-white font-bold py-2 px-4 my-2 rounded border-black border-2 text-xl bg-black hover:bg-white hover:text-black active:bg-blue-500 focus:outline-none focus:ring focus:ring-violet-300">
+              Cardiovascular Track
+            </button>
+            <button className=" text-white font-bold py-2 px-4 my-2 rounded border-black border-2  text-xl bg-black hover:bg-white hover:text-black active:bg-blue-500 focus:outline-none focus:ring focus:ring-violet-300">
+              Yoga For Migraine Track
+            </button>
+          </div>
+          <div className="w2/3 rounded">
+            <img
+              className="rounded-lg "
+              src="https://media.discordapp.net/attachments/1164497786964803585/1198227872582742036/coupon-1658314220.png?ex=65be23aa&is=65abaeaa&hm=281ae9d42fb4d61562db3e7c939d4da25319824fd68ed8932af6e3e3eb6cd761&=&format=webp&quality=lossless&width=955&height=537"
+            />
+          </div>
         </div>
-        <div className="flex flex-col w-72 ml-20">
-          <button className=" text-white font-bold py-2 px-4 my-2 rounded border-black border-2 text-xl bg-black hover:bg-white hover:text-black active:bg-blue-950 focus:outline-none focus:ring focus:ring-violet-300">
-            Begginers Track
-          </button>
-          <button className=" text-white font-bold py-2 px-4 my-2 rounded border-black border-2  text-xl bg-black hover:bg-white hover:text-black active:bg-blue-950 focus:outline-none focus:ring focus:ring-violet-300">
-            Power Yoga Track
-          </button>
-          <button className=" text-white font-bold py-2 px-4 my-2 rounded border-black border-2 text-xl bg-black hover:bg-white hover:text-black active:bg-blue-950 focus:outline-none focus:ring focus:ring-violet-300">
-            Immunity Booster Track
-          </button>
-          <button className=" text-white font-bold py-2 px-4 my-2 rounded border-black border-2 text-xl bg-black hover:bg-white hover:text-black active:bg-blue-950 focus:outline-none focus:ring focus:ring-violet-300">
-            Yoga in Pregnancy Track
-          </button>
-          <button className=" text-white font-bold py-2 px-4 my-2 rounded border-black border-2 text-xl bg-black hover:bg-white hover:text-black active:bg-blue-950 focus:outline-none focus:ring focus:ring-violet-300">
-            Cardiovascular Track
-          </button>
-          <button className=" text-white font-bold py-2 px-4 my-2 rounded border-black border-2  text-xl bg-black hover:bg-white hover:text-black active:bg-blue-950 focus:outline-none focus:ring focus:ring-violet-300">
-            Yoga For Migraine Track
-          </button>
+        <div>
+          <h1 className="text-5xl my-8  font-bold ml-20">Exclusive Features</h1>
         </div>
-        <div className="container mx-auto mt-8 h-80 bg-gradient-to-r   ">
+        <div className="container mx-auto h-80 bg-gradient-to-r   ">
           <div className="w-full p-4 flex h-96 bg-gradient-to-r place-self-center  ">
             <img
               class="w-1/2 self-center h-80 mt-8 rounded-lg hover:scale-200"
